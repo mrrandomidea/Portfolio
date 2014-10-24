@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+html, body {
+		margin: 0px;
+		padding: 0px;
+        background-image: url('img/background.png'); /* replace with the correct dir and file */
+        background-repeat: no-repeat; /* don't fucking repeat mr.background, we're not going for a tiled effect */
+        background-size: cover; /* or use 'contain' - whatever looks best yo */
+        background-position: center; /* center ... already explained in context */
+        /* You can use all dese mofos for positioning ^^^^
+                left top
+                left center
+                left bottom
+                right top
+                right center
+                right bottom
+                center top
+                center center
+                center bottom
+                initial */
+}
+ 
+h1, html, body, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif; /* Just cause it looks prettier */
+        color: #FFFFFF ; /* #800BSS <- don't try it... */
+        text-rendering: optimizeLegibility;
+                /* learn to use this shit, it's awesome
+                        'optimizeLegibility' makes the fonts look so sexy,
+                        'optimizeSpeed' disables kerning and ligatures, basically makes it load faster,
+                        'geometricPrecision'
+                                only use when your text scaling is a bit off,
+                                it does some complex shit that would take too long to explain to anyone
+                        'auto' your browser decides when it needs speed,
+                                   can optimize for legibility, or gemoetric precision yo */
+}
+#apDiv1 {
+	width: 1920px;
+	height:768px;
+	z-index:1;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#content {
+	color: black;
+	width: 1560px;
+	margin-right: auto;
+	margin-top: 20px;
+	position: relative;
+}
+#nav {
+	background-color: rgb(90,39,148);
+	padding-left: 260px;
+	color: white;
+	height: 35px;
+	line-height: 35px;
+}
+
+#nav li {
+	display: inline;
+	padding: 20px;
+	margin: 10px;
+	line-height: 25px;
+}
+#nav a {
+	color: white;
+	text-decoration: none;	
+}
+
+#nav a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+body {
+	background-color: white;
+}
+
+#img {
+	padding-left: 230px;
+}
+#side-bar {
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 15px;
+	width: 150px;
+	background-color: rgb(90,39,148);
+	text-align: center;
+	height: 723.5px;
+	float: left;
+	margin-right: 170px;
+	margin-top: -21px;
+}
+#side-bar a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 20px;
+}
+#side-bar li {
+	line-height: 50px;
+}
+#side-bar li:hover {
+	background-color: #222222;
+}
+ul .side-bar-sub-park {
+	display: none;
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #636468;
+	z-index: 1	;
+}
+li .side-bar-sub-park {
+	background-color: white;
+}
+li:hover .side-bar-sub-park  {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: -5px;
+	width: 150px;
+	background-color: #636468;
+}
+ul .side-bar-sub-lawn {
+	display: none;
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	z-index: 1	;
+}
+li .side-bar-sub-lawn {
+	background-color: #222222;
+}
+li:hover .side-bar-sub-lawn {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 45px;
+	width: 150px;
+	background-color: #636468;
+}
+ul .side-bar-sub-rest {
+	display: none;
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	z-index: 1	;
+}
+li .side-bar-sub-rest {
+	background-color: #222222;
+}
+li:hover .side-bar-sub-rest {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 95px;
+	width: 150px;
+	background-color: #636468;
+}
+ul .side-bar-sub-skills {
+	display: none;
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	z-index: 1	;
+}
+li .side-bar-sub-skills {
+	background-color: white;
+}
+li:hover .side-bar-sub-skills {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 145px;
+	width: 150px;
+	background-color: #636468;
+}
+a {
+	color: black;
+	text-decoration: none;		
+}
+a:hover {
+	text-decoration: underline;	
+}
+#img-content {
+	padding-left: 15px;	
+}
+#waterfall-img {
+	padding: 5px;	
+}
