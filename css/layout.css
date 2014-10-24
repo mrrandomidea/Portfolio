@@ -1,5 +1,7 @@
 /* General body styling (try not to touch too much) */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,400,300,700,800);
 html, body {
+        min-width: 960px;
 		margin: 0px;
 		padding: 0px;
 		background-color: #EEEEEE;
@@ -9,6 +11,10 @@ p, html, body, h1, h2, h3, h4, h5, h6 {
         font-family: 'Open Sans', sans-serif;
         color: #3c3c3c;
         text-rendering: optimizeLegibility;
+}
+
+p {
+	font-size: 1.1rem;
 }
 
 /* Header styles */
@@ -129,6 +135,7 @@ nav li a.active {
 /* Layout styles */
 
 article {
+	border-radius: 10px;
 	padding: 1%;
 	position: relative;
 	width: 50%;
@@ -140,28 +147,27 @@ article {
 article p {
 	margin: .2rem 0;
 }
-p::first-line {
-	color: red;
-	text-decoration: italic;
-	margin:2px;
-	float: left;
-}
 
 article section {
+
 }
 
 /* Aside styles */
 
-article aside {
-	width: 15%;
+aside {
+    min-width: 150px;
+    float: left;
+	width: 10%;
+	background-color: #5A2794;
+	border-radius: 0 10px 10px 0;
 }
 
 aside ul {
-
+	display: block
 }
 
 aside ul li {
-
+    display: block;
 }
 
 aside ul li li {
@@ -169,10 +175,32 @@ aside ul li li {
 }
 
 aside ul li a {
+    display: block;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 100;
+}
 
+aside ul li:hover {
+	background-color: rgba(255, 255, 255, .1);
 }
 
 aside ul li li a {
 
 }
 
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #5A2794;
+    padding: .5%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
